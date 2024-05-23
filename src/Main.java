@@ -8,7 +8,13 @@ public class Main {
     }
 
     public static double avg(int num) {
-        //todo Дописать логику работы метода сюда. Метод main не трогаем!!!
-        return 0; //todo заменить 0 на корректный результат.
+        String strNum = String.valueOf(num);
+        double dobleNum = 0;
+
+        for (int i = 0; i < strNum.length(); i++) {
+            dobleNum = dobleNum + Integer.parseInt(String.valueOf(strNum.charAt(i)));
+        }
+
+        return dobleNum / strNum.length();
     }
 }
